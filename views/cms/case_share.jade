@@ -1,0 +1,54 @@
+extends layouts/layout
+append loadtitle
+    -title += ' | 首页-案例分享'
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 案例分享
+                    small 案例分享修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 案例分享修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/case_share/update')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{website.id}")
+                                label.col-sm-2.control-label(for='case_share_1') 案例分享1
+                                .col-sm-4: input#case_share_1.form-control.parsley-validated(name='case_share_1',type='text',placeholder='案例分享1',
+                                value="#{website.case_share_1}",autocomplete="off",data-required="true")
+                            .form-group
+                                label.col-sm-2.control-label(for='case_share_1_content') 案例分享1内容
+                                .col-sm-10: textarea#case_share_1_content.textarea.form-control.parsley-validated(name="case_share_1_content",rows="4",placeholder="案例分享1内容",
+                                    autocomplete="off",data-required="true") #{website.case_share_1_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='case_share_2') 案例分享2
+                                .col-sm-4: input#case_share_2.form-control.parsley-validated(name='case_share_2',type='text',placeholder='案例分享2',
+                                value="#{website.case_share_2}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='case_share_2_content') 案例分享2内容
+                                .col-sm-10: textarea#case_share_2_content.textarea.form-control.parsley-validated(name="case_share_2_content",rows="4",placeholder="案例分享2内容",
+                                    autocomplete="off") #{website.case_share_2_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='case_share_3') 案例分享3
+                                .col-sm-4: input#case_share_3.form-control.parsley-validated(name='case_share_3',type='text',placeholder='案例分享3',
+                                value="#{website.case_share_3}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='case_share_3_content') 案例分享3内容
+                                .col-sm-10: textarea#case_share_3_content.textarea.form-control.parsley-validated(name="case_share_3_content",rows="4",placeholder="案例分享3内容",
+                                    autocomplete="off") #{website.case_share_3_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='case_share_4') 案例分享4
+                                .col-sm-4: input#case_share_4.form-control.parsley-validated(name='case_share_4',type='text',placeholder='案例分享4',
+                                value="#{website.case_share_4}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='case_share_4_content') 企业优势4内容
+                                .col-sm-10: textarea#case_share_4_content.textarea.form-control.parsley-validated(name="case_share_4_content",rows="4",placeholder="企业优势4内容",
+                                    autocomplete="off") #{website.case_share_4_content}
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/e_advantage') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改
+
+
+

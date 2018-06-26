@@ -1,0 +1,43 @@
+extends layouts/layout
+append loadtitle
+    -title += ' | 案例分享-微信开发'
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 案例分享-微信开发
+                    small 案例分享-微信开发修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 案例分享-微信开发修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/case_wechat/update')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{case_wechat.id}")
+                                label.col-sm-2.control-label(for='name_1') 案例名称1
+                                .col-sm-4: input#name_1.form-control.parsley-validated(name='name_1',type='text',placeholder='案例名称1',
+                                value="#{case_wechat.name_1}",autocomplete="off",data-required="true")
+                            .form-group
+                                label.col-sm-2.control-label(for='comment_1') 案例1内容
+                                .col-sm-10: textarea#comment_1.textarea.form-control.parsley-validated(name="comment_1",rows="4",placeholder="案例1内容",
+                                 autocomplete="off",data-required="true") #{case_wechat.comment_1}
+                            .form-group
+                                label.col-sm-2.control-label(for='name_2') 案例名称2
+                                .col-sm-4: input#name_2.form-control.parsley-validated(name='name_2',type='text',placeholder='案例名称2',
+                                value="#{case_wechat.name_2}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='comment_2') 案例2内容
+                                .col-sm-10: textarea#comment_2.textarea.form-control.parsley-validated(name="comment_2",rows="4",placeholder="案例2内容",
+                                 autocomplete="off") #{case_wechat.comment_2}
+                            .form-group
+                                label.col-sm-2.control-label(for='createtime') 创建时间
+                                .col-sm-4: input#createtime.form-control.parsley-validated(name='createtime',type='text',placeholder='创建时间',
+                                value="#{case_wechat.createtime}",autocomplete="off",data-required="true")
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/case_app') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改
+                             
+
+
+ 

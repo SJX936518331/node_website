@@ -1,0 +1,265 @@
+
+block loadtitle
+    -var title= website.title
+append styles  
+   link(rel='stylesheet', href='/styles/main.css')
+   link(rel='stylesheet', href='/styles/index.css')
+   link(rel='shortcut icon',href='/img/web/logo.ico')
+include includes/header
+include ../core/scripts
+//- include ../layouts/layout
+append loadtitle
+    -title += ' | 首页'
+.banner_img
+.container
+    .advantage
+        .enterprise_advantage
+            .title
+                span Enterprise advantage
+            .title_
+                span 企业优势
+            .advantage_line
+            .content
+                .content_   
+                    ul
+                        li
+                            .img
+                                img(width='128px', height='128px', src='/img/web/fangan.png')
+                            .content_1 
+                                span #{website.advantage_name1}
+                            .content_2
+                                span #{website.advantage_content1}
+                        li
+                            .img
+                                img(src='/img/web/zhiliang.png')
+                            .content_1 
+                                span #{website.advantage_name2}
+                            .content_2
+                                span #{website.advantage_content2}
+                        li
+                            .img
+                                img(src='/img/web/zhunshi.png')
+                            .content_1 
+                                span #{website.advantage_name3}
+                            .content_2
+                                span #{website.advantage_content3}
+                        li
+                            .img
+                                img(src='/img/web/heart.png')
+                            .content_1 
+                                span #{website.advantage_name4}
+                            .content_2
+                                span #{website.advantage_content4}
+
+        .service
+            .title
+                span Service advantage
+            .title_
+                span 服务优势
+            .service_line
+            .content_
+                ul
+                    li
+                        .img
+                            img(src='/img/web/zixun.png')
+                        .content_1
+                            span #{website.s_advantage_1}
+                    li
+                        .img
+                            img(src='/img/web/peixun.png')
+                        .content_1
+                            span #{website.s_advantage_2}
+                    li
+                        .img
+                            img(src='/img/web/jishu.png')
+                        .content_1
+                            span #{website.s_advantage_3}
+                    li
+                        .img
+                            img(src='/img/web/weihu.png')
+                        .content_1
+                            span #{website.s_advantage_4}    
+
+        .case
+            .title
+                span Case sharing
+            .title_
+                span 案例分享
+            .case_line
+            .share   
+                .share_1
+                    ul
+                        li
+                            .img
+                                img(src='/img/web/system_lc.png')
+                            .bg
+                                span
+                        li
+                            .title #{website.case_share_1}
+                            .share_content #{website.case_share_1_content}
+                        li
+                            .img
+                                img(src='/img/web/lc_gzh.png')
+                        li
+                            .title #{website.case_share_2}
+                            .share_content  #{website.case_share_2_content}  
+
+                .share_2
+                    ul
+                        li
+                            .title  #{website.case_share_3}
+                            .share_content   #{website.case_share_3_content}  
+                        li
+                            .img
+                                img(src='/img/web/coffee_rh.png')
+                        li
+                            .title #{website.case_share_4}
+                            .share_content #{website.case_share_4_content}  
+                        li
+                            .img
+                                img(src='/img/web/website_zrj.png')         
+            .more
+                a(href='./case_appDevelopment.html') 查看更多
+        .process
+            .title.process_title
+                 span Service Process
+            .title_.process_title_
+                 span 服务流程
+            .process_line
+            .content_   
+                   ul
+                      li.right
+                            .process_right
+                                   .radius
+                                          span 1
+                                   .right
+                                         .title #{website.s_process_1}
+                                         .content
+                                                p  #{website.s_process_1_content}
+
+                      li.line
+                             span
+
+                      li.left
+                            .process_left
+                                   .left
+                                          .title #{website.s_process_2}
+                                          .content
+                                                p #{website.s_process_2_content}
+                                   .radius
+                                         span 2
+                      li.line
+                             span
+
+                      li.right
+                            .process_right
+                                   .radius
+                                         span 3
+                                   .right
+                                         .title #{website.s_process_3}
+                                         .content
+                                                p #{website.s_process_3_content}
+                      li.line
+                             span
+
+                      li.left
+                            .process_left
+                                   .left
+                                          .title #{website.s_process_4}
+                                          .content
+                                                p #{website.s_process_4_content}
+                                   .radius
+                                         span 4
+                      li.line
+                             span
+
+                      li.right
+                            .process_right
+                                   .radius
+                                         span 5
+                                   .right
+                                         .title #{website.s_process_5}
+                                         .content
+                                                p #{website.s_process_5_content}
+                      li.line
+                             span
+
+                      li.left
+                            .process_left
+                                   .left
+                                         .title #{website.s_process_6}
+                                         .content
+                                               p #{website.s_process_6_content}
+                                   .radius
+                                         span 6
+                                   
+        .customer
+            .title
+                span Service customers
+            .title_
+                span 服务客户
+            .customer_line
+            .content_
+                    ul
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo1.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo2.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo3.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo4.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo5.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo6.png')
+                    ul
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo7.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo8.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo9.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo10.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo11.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo12.png')
+                    ul
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo13.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo14.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo15.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo16.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo17.png')
+                        li
+                           .img
+                               img(width='140px', height='140px', src='/img/web/logo18.png')
+include includes/footer    
+append scripts
+    script(type ='text/javascript', src = "/js/web/addviews.js")
+    script(type ='text/javascript', src = "/js/web/index.js")
+    script(type='text/javascript',src='/plugins/angular/angular.min.js')   
+   

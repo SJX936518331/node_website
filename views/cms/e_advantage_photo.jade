@@ -1,0 +1,106 @@
+extends layouts/layout
+append styles
+    link(rel='stylesheet', href='/plugins/kindeditor-4.1.11/themes/default/default.css')
+    link(rel='stylesheet', href='/plugins/kindeditor-4.1.11/plugins/code/prettify.css')
+    link(rel='stylesheet', href='/plugins/jquery-file-upload/css/jquery.fileupload.css')
+append loadtitle
+    -title += ' | 首页-企业优势'
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 企业优势图片
+                    small 企业优势图片修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 企业优势图片修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/e_advantage_photo/update')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{e_advantage_photo.id}")
+                                label.col-sm-2.control-label 上传图片
+                                .col-sm-10: span.btn.btn-default.fileinput-button
+                                    i.fa.fa-picture-o
+                                    span 选择图片
+                                    input#file1(type='file',name='filesdata')
+                                    //- multiple='multiple'
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                blockquote.note.note-info
+                                    h4 注意事项
+                                    ul
+                                        //- li 支持多选
+                                        li 最大文件大小上传
+                                            strong 200MB
+                                            | .
+                                        li 支持的图片类型有（
+                                            strong JPG, GIF, PNG
+                                            | ）.
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/e_advantage_photo') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改
+                        .col-sm-4#app1(ng-app="e_advantage_photolist",ng-controller="e_advantage_photolistCtrl")
+                            .form-group(ng-repeat="e_advantage_photo in e_advantage_photolist")
+                                .col-sm-12.text-center
+                                    label.mrlg {{$index+1}}.{{e_advantage_photo.pic_name}}
+                                    a.btn.btn-danger.btn-xs.mllg(ng-click='DeletePicture(e_advantage_photo.id)')
+                                        i.fa.fa-times
+                                        span 删除此图片
+                                .col-sm-12.details-picture
+                                    img(ng-src='{{e_advantage_photo.pic_url_loc?e_advantage_photo.pic_url_loc:""}}')
+append scripts
+    script(type='text/javascript',src='/plugins/kindeditor-4.1.11/kindeditor-min.js')
+    script(type='text/javascript',src='/plugins/kindeditor-4.1.11/lang/zh_CN.js')
+    script(type='text/javascript',src='/plugins/kindeditor-4.1.11/plugins/code/prettify.js')
+    script(type='text/javascript',src='/js/cms/KindEditorPageJS.js')
+    script(type='text/javascript',src='/plugins/jquery-file-upload/js/jquery.fileupload-ajax.js')
+    script(type='text/javascript',src='/js/cms/UploadPageJS.js')
+    script(type='text/javascript').
+        var app1 = angular.module('picturelist', []);
+        app1.controller('picturelistCtrl', function ($scope) {
+            $scope.picturelists = [];
+            $scope.LoadPicture = function () {
+                $.ajax({
+                    url: "/cms/picture/list",
+                    type: "post",
+                    data: {pic_type: 1, key_id: #{e_advantage_photo.id}},
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.status > 0) {
+                            $scope.picturelists = data.data;
+                            $scope.$apply();
+                        }
+                    }
+                });
+            };
+            $scope.DeletePicture = function (id) {
+                $.ajax({
+                    url: "/cms/picture/delete/" + id,
+                    type: "post",
+                    dataType: "json",
+                    success: function (data) {
+                        if (data.status > 0) {
+                            toastrShow(data.status, data.msg);
+                            $scope.LoadPicture();
+                        } else {
+                            toastrShow(data.status, data.msg);
+                        }
+                    }
+                });
+            };
+            $scope.LoadPicture();
+
+            //当选中文件,则立即执行上传
+            $(document).on("change", "#file1", function () {
+                if ($("#file1").val() != "") {
+                    if ($scope.picturelists.length >= 5) {
+                        toastrShow(3, '每个产品最多上传5张图片');
+                        return;
+                    }
+                    FileAction.FileUpload("file1", 1, #{e_advantage_photo.id}, null, null, null, $scope.LoadPicture);
+                }
+            });
+        });
+
+
+

@@ -1,0 +1,1145 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 内容部分 */
+
+.container {
+    width: 100%;
+}
+
+/* 企业优势 */
+
+.container .advantage .enterprise_advantage {
+    width: 100%;
+    text-align: center;
+}
+
+.container .advantage .enterprise_advantage .title,
+.container .title_ {
+    text-align: center;
+}
+
+.container .advantage .enterprise_advantage .title {
+    padding-top: 80px;
+}
+
+.container .advantage .enterprise_advantage .title span {
+    display: inline-block;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-family: Arial;
+    font-size: 32px;
+    color: #666666;
+}
+
+.container .advantage .enterprise_advantage .process .process_title span,
+.container .advantage .process .process_title_ span {
+    color: white;
+}
+
+.container .advantage .enterprise_advantage .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #666666;
+}
+
+.container .advantage .enterprise_advantage .advantage_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.advantage .enterprise_advantage .content {
+    width: 100%;
+    text-align: center;
+}
+
+.advantage .enterprise_advantage .content .content_ {
+    display: inline-block;
+}
+
+.advantage .enterprise_advantage .content .content_ ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li {
+    width: 128px;
+    margin: 0px;
+    margin-right: 128px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li div.content_1 span {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #333333;
+    border-bottom: 2px solid #83c6FF;
+    padding-bottom: 8px;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li:nth-child(2) div.content_1 span,
+.advantage .enterprise_advantage .content .content_ ul li:nth-child(3) div.content_1 span {
+    border-bottom: 2px solid #E29E6D;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li:nth-child(4) div.content_1 span {
+    border-bottom: 2px solid #F27E82;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li:last-child {
+    margin-right: 0px;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li div.content_1:hover {
+    color: gray;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li .img {
+    display: inline-block;
+    height: 128px;
+    width: 128px;
+    margin-bottom: 24px;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li:nth-child(2) .content_1 .line span {
+    border-bottom: 1px solid #fdba4d;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li:nth-child(3) .content_1 .line span {
+    border-bottom: 1px solid #fca86e;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li:nth-child(4) .content_1 .line span {
+    border-bottom: 1px solid #f865a7;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li .content_2 {
+    text-align: left;
+    width: 160px;
+    margin-top: 24px;
+    padding-bottom: 80px;
+}
+
+.advantage .enterprise_advantage .content .content_ ul li .content_2 span {
+    display: inline-block;
+    line-height: 28px;
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #666666;
+}
+
+/* 服务优势 */
+
+.container .advantage .service {
+    background: url(../img/web/bg_fuwu.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.container .advantage .service .service_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.container .advantage .service .title {
+    padding-top: 64px;
+}
+
+.container .advantage .service .title,
+.container .advantage .service .title_ {
+    text-align: center;
+}
+
+.container .advantage .service .title span {
+    display: inline-block;
+    line-height: 32px;
+    font-family: Arial;
+    font-size: 32px;
+    padding-bottom: 6px;
+    color: #666666;
+}
+
+.container .advantage .service .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #666666;
+}
+
+.container .advantage .service .content_ {
+    padding-bottom: 80px;
+}
+
+.container .advantage .service .content_ ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.container .advantage .service .content_ ul li {
+    background-color: white;
+    float: left;
+    width: 226px;
+    height: 300px;
+    margin: 0px 24px 0px 0px;
+    padding: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container .advantage .service .content_ ul li .img {
+    border: none;
+    height: 226px;
+}
+
+.container .advantage .service .content_ ul li .img img {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.container .advantage .service .content_1 {
+    padding: 15px 0px;
+}
+
+.container .advantage .service .content_1 span {
+    font-family: "微软雅黑";
+    font-size: 30px;
+    color: #444444;
+}
+
+.container .advantage .service div.content_1:hover span {
+    color: gray;
+}
+
+/* 案例分享 */
+
+.container .advantage .case {
+    width: 100%;
+    text-align: center;
+}
+
+.container .advantage .case .title {
+    padding-top: 80px;
+}
+
+.container .advantage .case .share .share_1 .title,
+.container .advantage .case .share .share_2 .title {
+    padding-top: 40px;
+    padding-bottom: 16px;
+    font-family: "微软雅黑";
+    font-size: 20px;
+    color: #389ED9;
+}
+
+.container .advantage .case .title,
+.container .advantage .service .title_ {
+    text-align: center;
+}
+
+.container .advantage .case .title span {
+    display: inline-block;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-family: Arial;
+    font-size: 32px;
+    color: #666666;
+}
+
+.container .advantage .case .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #666666;
+}
+
+.container .advantage .case .case_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.container .advantage .case .share,
+.container .advantage .case .share .share_1 {
+    width: 100%;
+}
+
+.container .advantage .case .share .share_1 ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.container .advantage .case .share .share_1 ul li .img {
+    width: 256px;
+    height: 220px;
+}
+
+.container .advantage .case .share .share_1 ul li .bg {
+    width: 256px;
+    height: 220px;
+    line-height: 220px;
+    text-align: center;
+    display: none;
+}
+
+.container .advantage .case .more {
+    text-align: center;
+    padding: 64px 0px 80px 0px;
+}
+
+.container .advantage .case .more a {
+    display: inline-block;
+    width: 180px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    text-decoration: none;
+    border: 1px #389ED9 solid;
+    border-radius: 30px;
+    color: #666666;
+    font-size: 20px;
+    font-family: "黑体";
+}
+
+.container .advantage .case .share .share_1 ul li:nth-child(even) {
+    width: 256px;
+    background-color: #F6F6F6F6;
+}
+
+.container .advantage .case .share .share_2 ul li:nth-child(odd) {
+    width: 256px;
+    background-color: #F6F6F6F6;
+}
+
+.container .advantage .case .share .share_1 ul li:nth-child(even) div.title:hover {
+    color: gray;
+}
+
+.container .advantage .case .share .share_1 ul li:nth-child(even) .share_content {
+    font-family: "黑体";
+    padding: 0px 25px;
+    text-align: left;
+    font-size: 16px;
+    color: #999999;
+    line-height: 25px;
+}
+
+.container .advantage .case .share,
+.container .advantage .case .share .share_2 {
+    width: 100%;
+}
+
+.container .advantage .case .share .share_2 ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.container .advantage .case .share .share_2 ul li .img {
+    width: 256px;
+    height: 220px;
+}
+
+.container .advantage .case .share .share_2 ul li .bg {
+    width: 258px;
+    height: 220px;
+    line-height: 220px;
+    text-align: center;
+    background-color: rgba(196, 196, 196, 0.4);
+    display: none;
+}
+
+.container .advantage .case .share .share_2 ul li:nth-child(odd) {
+    width: 256px;
+}
+
+.container .advantage .case .share .share_2 ul li:nth-child(odd) div.title:hover {
+    color: gray;
+}
+
+.container .advantage .case .share .share_2 ul li:nth-child(odd) .share_content {
+    font-family: "黑体";
+    padding: 0px 25px;
+    text-align: left;
+    font-size: 16px;
+    color: #999999;
+    line-height: 25px;
+}
+
+/* 服务流程 */
+
+.container .advantage .process {
+    background: url(../img/web/server_process.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+
+.container .advantage .process .process_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.container .advantage .process .title,
+.container .advantage .process .title_ {
+    text-align: center;
+}
+
+.container .advantage .process .title {
+    padding-top: 64px;
+}
+
+.container .advantage .process .title span {
+    display: inline-block;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-family: Arial;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.container .advantage .process .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.container .advantage .process .content_ {
+    padding-bottom: 100px;
+}
+
+.container .advantage .process .content_ ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.container .advantage .process .content_ ul .line {
+    display: flex;
+    justify-content: center;
+    height: 56px;
+}
+
+.container .advantage .process .content_ ul .line span {
+    border-right: 2px solid rgb(255, 255, 255);
+    height: 56px;
+}
+
+.container .advantage .process .content_ ul li:not(.line) span {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.container .advantage .process .content_ ul li:not(.line) {
+    width: 100%;
+    height: 60px;
+}
+
+/* 流程li(除了.line的li) */
+
+.container .advantage .process .content_ ul li.right:not(.line) {
+    display: flex;
+    justify-content: flex-end;
+    height: 40px;
+}
+
+.container .advantage .process .content_ ul li.left:not(.line) {
+    display: flex;
+    justify-content: flex-start;
+    height: 40px;
+}
+
+/* 流程右边 */
+
+.container .advantage .process .content_ ul li.right .process_right {
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    width: 66.7%;
+}
+
+.container .advantage .process .content_ ul li.right .process_right div.radius {
+    display: inline-block;
+    border: 2px solid #FFFEFE;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.container .advantage .process .content_ ul li.right .process_right div.radius span {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #666666;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.container .advantage .process .content_ ul li.right .process_right .right {
+    width: 50%;
+    position: relative;
+    left: 10px;
+    height: 35px;
+}
+
+.container .advantage .process .content_ ul li.right .process_right .title {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #FFFEFE;
+    padding: 0px 0px 12px 0px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.container .advantage .process .content_ ul li.right .process_right .content {
+    padding: 0;
+    margin: 0;
+}
+
+.container .advantage .process .content_ ul li.right .process_right .right .content p {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #FFFEFE;
+    text-align: left;
+}
+
+/* 流程左边 */
+
+.container .advantage .process .content_ ul li.left .process_left {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 66.75%;
+}
+
+.container .advantage .process .content_ ul li.left .process_left div.radius {
+    display: inline-block;
+    border: 2px solid #FFFEFE;
+    height: 38px;
+    width: 38px;
+    line-height: 38px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.container .advantage .process .content_ ul li.left .process_left div.radius span {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #666666;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.container .advantage .process .content_ ul li.left .process_left .left {
+    width: 50%;
+    position: relative;
+    right: 5px;
+    height: 35px;
+}
+
+.container .advantage .process .content_ ul li.left .process_left .left .title {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #FFFEFE;
+    padding: 0px 0px 12px 0px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.container .advantage .process .content_ ul li.left .process_left .left .content {
+    padding: 0;
+    margin: 0;
+}
+
+.container .advantage .process .content_ ul li.left .process_left .left .content p {
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #FFFEFE;
+    text-align: right;
+}
+
+/* 服务客户 */
+
+.container .advantage .customer {
+    width: 100%;
+    padding-bottom: 64px;
+    background-color: #F6F6F6;
+    text-align: center;
+}
+
+.container .advantage .customer .customer_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.container .advantage .customer .title,
+.container .advantage .customer .title_ {
+    text-align: center;
+}
+
+.container .advantage .customer .title {
+    padding-top: 64px;
+}
+
+.container .advantage .customer .title span {
+    display: inline-block;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-family: Arial;
+    font-size: 32px;
+    color: #666666;
+}
+
+.container .advantage .customer .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #666666;
+}
+
+.container .advantage .customer .content_ ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.container .advantage .customer .content_ ul li {
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.container .advantage .customer .content_ ul li .img {
+    width: 140px;
+    height: 140px;
+    border: none;
+}
+
+.container .advantage .customer .content_ ul li {
+    margin: 0px 32px 32px 0px;
+    box-shadow: 0px 3px 18px  rgba(134, 134, 134, 0.3);
+}
+
+/* 媒体查询 */
+
+@media screen and (max-width:768px) {
+    /* 图标内容 */
+    .banner_img .content {
+        width: 300px;
+    }
+    .banner_img .content .top {
+        width: 40%;
+    }
+    .banner_img .content .top div:nth-child(1),
+    .banner_img .content .top div:nth-child(2) {
+        font-size: 12px;
+    }
+    .banner_img .content .foot {
+        height: 50%;
+        font-size: 12px;
+    }
+    /* 企业优势 */
+    .advantage .enterprise_advantage .content {
+        padding-bottom: 40px;
+    }
+    .container .advantage .enterprise_advantage .title {
+        padding-top: 40px;
+    }
+    .container .advantage .case .title {
+        padding-top: 40px;
+    }
+    .container .advantage .enterprise_advantage .title span {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .container .advantage .enterprise_advantage .title_ span {
+        font-size: 16px;
+    }
+    .advantage .enterprise_advantage .content .content_ ul li div.content_1 span {
+        font-size: 12px;
+    }
+    .advantage .enterprise_advantage .content .content_ ul li {
+        margin-right: 20px;
+        width: 80px;
+        height: auto;
+    }
+    .advantage .enterprise_advantage .content .content_ ul li:last-child {
+        margin-right: 0px;
+    }
+    .advantage .enterprise_advantage .content .content_ ul li .img {
+        width: 86px;
+        height: 64px;
+        margin-bottom: 12px;
+    }
+    .advantage .enterprise_advantage .content .content_ ul li .img img {
+        width: 64px;
+        height: 64px;
+    }
+    .advantage .enterprise_advantage .content .content_ ul li .content_2 {
+        text-align: left;
+        margin-top: 5px;
+        padding-bottom: 40px;
+        padding-left: 5px;
+        width: 86px;
+    }
+    .advantage .enterprise_advantage .content .content_ ul li .content_2 span {
+        line-height: 18px;
+        font-size: 12px;
+        padding: 5px 5px 5px 0px;
+    }
+    .container .advantage .enterprise_advantage .advantage_line {
+        height: 6px;
+        border-bottom: 3px #389ED9 solid;
+        width: 64px;
+        margin-bottom: 32px;
+    }
+    .container .advantage .enterprise_advantage .process_title span,
+    .container .advantage .enterprise_advantage .process_title_ span {
+        color: white;
+    }
+    .container .advantage .enterprise_advantage .content_ ul li {
+        float: left;
+        width: 86px;
+        margin: 0;
+    }
+    .container .advantage .enterprise_advantage .content_ ul li .content_1 {
+        font-size: 12px;
+        padding: 5px 0px;
+        width: 86px;
+    }
+    .container .advantage .enterprise_advantage .content_ ul li .content_1 .line span {
+        width: 75%;
+    }
+    .container .advantage .enterprise_advantage .content_ ul li .content_2 span {
+        font-size: 8px;
+    }
+    /* 服务优势 */
+    .container .advantage .service .content_ ul li:last-child {
+        margin-right: 0px;
+    }
+    .container .advantage .service .content_ ul li {
+        width: 76px;
+        margin: 0px 5px 0px 0px;
+        height: auto;
+        padding: 5px;
+    }
+    .container .advantage .service .title {
+        padding-top: 32px;
+    }
+    .container .advantage .service .content_1 {
+        padding: 5px 0px;
+    }
+    .container .advantage .service .title span {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .container .advantage .service .title_ span {
+        font-size: 16px;
+    }
+    .container .advantage .service .service_line {
+        width: 64px;
+        margin-bottom: 32px;
+        height: 6px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .advantage .service .content_ ul li {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        /* width: 100%;
+        height: 100%; */
+    }
+    .container .advantage .service .content_ ul li .img {
+        height: 70px;
+    }
+    .container .advantage .service .content_ ul li .img img {
+        width: 70px;
+        height: 70px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .advantage .service .content_ ul li .content_1 span {
+        font-size: 12px;
+    }
+    /* 案例分享 */
+    .container .advantage .process .title {
+        padding-top: 32px;
+    }
+    .container .advantage .case .title span {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .container .advantage .case .title_ span {
+        font-size: 16px;
+    }
+    .container .advantage .case .case_line {
+        width: 64px;
+        margin-bottom: 32px;
+        height: 6px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .advantage .case .more {
+        padding: 34px 0px 40px 0px;
+    }
+    .container .advantage .case .more a {
+        width: 90px;
+        height: 24px;
+        line-height: 24px;
+        border-radius: 15px;
+        font-size: 10px;
+    }
+    .container .advantage .case .share .share_1 ul li {
+        width: auto;
+        height: 90px;
+    }
+    .container .advantage .case .share .share_1 ul li .img {
+        width: 90px;
+        height: 90px;
+    }
+    .container .advantage .case .share .share_2 ul li .img {
+        width: 90px;
+        height: 90px;
+    }
+    .container .advantage .case .share .share_1 ul li .img img,
+    .container .advantage .case .share .share_2 ul li .img img {
+        width: 90px;
+        height: 90px;
+    }
+    .container .advantage .case .share .share_1 ul li:nth-child(even) {
+        padding-top: 0px;
+        width: 90px;
+        height: 90px;
+    }
+    .container .advantage .case .share .share_1 ul li:nth-child(even) .title {
+        margin-top: 5px;
+        padding-top: 0px;
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+    .container .advantage .case .share .share_1 ul li:nth-child(even) .share_content {
+        padding: 0px 0px 5px 5px;
+        text-align: left;
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .container .advantage .case .share .share_2 ul li:nth-child(odd) .title {
+        font-size: 10px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+    .container .advantage .case .share .share_2 ul li:nth-child(odd) .share_content {
+        font-size: 8px;
+    }
+    .container .advantage .case .share .share_2 ul li:nth-child(odd) {
+        padding-top: 5px;
+        width: 90px;
+    }
+    .container .advantage .case .share .share_2 ul li:nth-child(odd) .share_content {
+        padding: 0px 5px 5px 5px;
+        text-align: left;
+        font-size: 8px;
+        line-height: 12px;
+    }
+    /* 服务流程 */
+    .container .advantage .process {
+        background: url(../img/web/server_process.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+    }
+    .container .advantage .process .title span {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .container .advantage .process .title_ span {
+        font-size: 16px;
+    }
+    .container .advantage .process .process_line {
+        width: 64px;
+        margin-bottom: 32px;
+        height: 6px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .advantage .process .title,
+    .container .advantage .process .title_ {
+        text-align: center;
+    }
+    .container .advantage .container .advantage .process .content_ ul li {
+        width: 100%;
+        margin: 0;
+    }
+    /* 流程li(除了.line的li) */
+    .container .advantage .process .content_ ul li.right:not(.line) {
+        display: flex;
+        justify-content: flex-end;
+        height: 40px;
+    }
+    .container .advantage .process .content_ ul li.left:not(.line) {
+        display: flex;
+        justify-content: flex-start;
+        height: 40px;
+    }
+    /* 流程右边 */
+    .container .advantage .process .content_ ul li.right .process_right {
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        width: 66.5%;
+    }
+    .container .advantage .process .content_ ul li.right .process_right span {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+    }
+    .container .advantage .process .content_ ul li.right .process_right .right {
+        width: 50%;
+        position: relative;
+        left: 10px;
+        height: 35px;
+    }
+    .container .advantage .process .content_ ul li.right .process_right .title {
+        font-size: 18px;
+        color: white;
+        padding: 0px 0px 5px 0px;
+    }
+    .container .advantage .process .content_ ul li.right .process_right .content {
+        padding: 0;
+        margin: 0;
+    }
+    .container .advantage .process .content_ ul li.right .process_right .right .content p {
+        font-size: 10px;
+        color: white;
+    }
+    /* 流程左边 */
+    .container .advantage .process .content_ ul li.left .process_left {
+        display: flex;
+        height: 40px;
+        justify-content: center;
+        width: 66.5%;
+    }
+    .container .advantage .process .content_ ul li.left .process_left span {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 50%;
+    }
+    .container .advantage .process .content_ ul li.left .process_left .left {
+        width: 50%;
+        position: relative;
+        right: 5px;
+        height: 35px;
+    }
+    .container .advantage .process .content_ ul li.left .process_left .left .title {
+        font-size: 18px;
+        color: white;
+        padding: 0px 0px 5px 0px;
+    }
+    .container .advantage .process .content_ ul li.left .process_left .left .content {
+        padding: 0;
+        margin: 0;
+    }
+    .container .advantage .process .content_ ul li.left .process_left .left .content p {
+        font-size: 10px;
+        color: white;
+    }
+    /* 其它 */
+    .container .advantage .process .content_ ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    .container .advantage .process .content_ ul li:not(.line) span {
+        display: inline-block;
+        line-height: 35px;
+        height: 35px;
+        width: 35px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+    }
+    .container .advantage .process .content_ ul .line {
+        display: flex;
+        justify-content: center;
+        height: 15px;
+    }
+    .container .advantage .process .content_ ul .line span {
+        border-right: 2px solid rgb(255, 255, 255);
+        height: 15px;
+    }
+    .container .advantage .process .content_ {
+        padding-bottom: 50px;
+    }
+    /* 服务客户 */
+    .container .advantage .customer {
+        padding-bottom: 0px;
+    }
+    .container .advantage .customer .title {
+        padding-top: 32px;
+    }
+    .container .advantage .customer .title span {
+        font-size: 22px;
+        padding-bottom: 0px;
+    }
+    .container .advantage .customer .title_ span {
+        font-size: 16px;
+    }
+    .container .advantage .customer .customer_line {
+        width: 64px;
+        height: 6px;
+        margin-bottom: 32px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .advantage .customer .content_ {
+        padding-bottom: 40px;
+    }
+    .container .advantage .customer .content_ ul li {
+        width: 50px;
+        height: 50px;
+        margin: 0px 5px 5px 0px;
+    }
+    .container .advantage .customer .content_ ul li:last-child {
+        margin-right: 0px;
+    }
+    .container .advantage .customer .content_ ul li .img {
+        width: 50px;
+        height: 50px;
+    }
+    .container .advantage .customer .content_ ul li .img img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* 针对ipad设备 */
+
+@media screen and (min-width:768px) and (max-width:800px) {
+    .header ul {
+        padding: 0px 0px 0px 60%;
+    }
+    .container .advantage .customer .content_ ul li {
+        width: 100px;
+        height: 100px;
+        margin: 0px 15px 15px 0px;
+    }
+    .container .advantage .customer .content_ ul li:last-child {
+        margin-right: 0px;
+    }
+    .container .advantage .customer .content_ ul li .img {
+        width: 100px;
+        height: 100px;
+    }
+    .container .advantage .customer .content_ ul li .img img {
+        width: 100px;
+        height: 100px;
+    }
+    .container .advantage .case .share .share_1 ul li .img {
+        width: 150px;
+        height: 150px;
+    }
+    .container .advantage .case .share .share_1 ul li .img img {
+        width: 150px;
+        height: 150px;
+    }
+    .container .advantage .case .share .share_1 ul li:nth-child(even) {
+        width: 150px;
+        height: 150px;
+    }
+    .container .advantage .case .share .share_1 ul li:nth-child(even) .title {
+        margin-top: 15px;
+        padding-top: 0px;
+        font-size: 18px;
+        padding-bottom: 5px;
+    }
+    .container .advantage .case .share .share_1 ul li:nth-child(even) .share_content {
+        padding: 0px 0px 5px 5px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .container .advantage .case .share .share_2 ul li .img img {
+        width: 150px;
+        height: 150px;
+    }
+    .container .advantage .case .share .share_2 ul li .img {
+        width: 150px;
+        height: 150px;
+    }
+    .container .advantage .case .share .share_2 ul li:nth-child(odd) {
+        width: 150px;
+        height: 150px;
+    }
+    .container .advantage .case .share .share_2 ul li:nth-child(odd) .title {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .container .advantage .case .share .share_2 ul li:nth-child(odd) .share_content {
+        padding: 0px 5px 5px 5px;
+        text-align: left;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+/* 针对ipad-pro的媒体查询 */
+
+@media screen and (min-width:1024px) and (max-width:1100px) {
+    .container .advantage .service .content_ ul li {
+        margin: 0px 5px 0px 0px;
+    }
+    .container .advantage .customer .content_ ul li {
+        margin: 0px 16px 32px 0px;
+    }
+}
+
+@media screen and (min-width:1400px) and (max-width:2200px) {
+    .banner_img .content .foot {
+        height: 60%;
+    }
+}

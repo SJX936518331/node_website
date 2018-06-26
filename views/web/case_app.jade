@@ -1,0 +1,66 @@
+block loadtitle
+    -var title= website.title
+include includes/header
+include ../core/scripts
+append styles
+   link(rel='stylesheet', href='/styles/main.css')
+   link(rel='stylesheet', href='/styles/app.css')
+   link(rel='shortcut icon',href='/img/web/logo.ico')
+append loadtitle
+    -title += ' | 经典案例-APP开发'
+
+.banner_img
+.container
+    .case_display
+        .title
+            span Display cases
+        .title_
+            span 案例展示
+        .case_line
+        .tab_case
+            ul
+                li
+                    span.first
+                        a(href='/case_app') App开发
+                    div App development
+                        .line_
+                li
+                    span
+                        a(href='/case_wechat') 微信开发
+                    div WeChat development
+                li
+                    span
+                        a(href='/case_website') 企业官网
+                    div Enterprise Website
+                li
+                    span
+                        a(href='/case_system') 管理系统
+                    div Management System
+            .line
+                span
+        .case_content
+            .content
+                span #{case_app.name_1}
+                div #{case_app.comment_1}
+            div
+                img(width='766px', height='484px', src='/img/web/yun_app.png')
+        .case_content_phone
+            .img
+                img(src='/img/web/peijian1.png')
+            .img
+                img(src='/img/web/peijian2.png')
+            .content
+                span #{case_app.name_2}
+                div #{case_app.comment_2}
+        .case_pk
+            .content
+                span #{case_app.name_3}
+                div #{case_app.comment_3}
+            .img
+                img(width='274px', height='452px',src='/img/web/pinke1.png')
+            .img
+                img(width='239px', height='488px',src='/img/web/pinke2.png')    
+include includes/footer                
+append scripts
+    script(type = 'text/javascript', src = "/js/web/addviews.js")
+    script(type = 'text/javascript', src = "/js/web/index.js")

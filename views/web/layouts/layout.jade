@@ -1,0 +1,24 @@
+extends ../../layout
+
+block loadtitle
+    -var title= website.title
+    -var keywords= website.keywords
+    -var description= website.description
+
+append styles
+    link(rel='shortcut icon',href='/img/web/logo.ico')
+
+//- block content
+//-     #page.container
+//-         include ../includes/header
+//-         section.container-fluid(style="margin-top: 5px;")
+//-             .col-sm-3(ng-app="sider",ng-controller="siderCtrl")
+//-                 block show_sider
+//-                 include ../includes/sider
+//-             .col-sm-9
+//-                 block web_content
+//-         include ../includes/footer
+
+append scripts
+    script(type='text/javascript',src='/plugins/angular/angular.min.js')
+    script(type = 'text/javascript', src = "/js/web/sider.js")

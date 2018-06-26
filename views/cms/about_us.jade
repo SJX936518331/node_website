@@ -1,0 +1,55 @@
+extends layouts/layout
+append loadtitle
+    -title += ' | 关于我们'
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 关于我们
+                    small 关于我们修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 关于我们修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/about_us/update')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{about_us.id}")
+                                label.col-sm-2.control-label(for='c_introduce') 公司介绍
+                                .col-sm-10: textarea#c_introduce.textarea.form-control.parsley-validated(name="c_introduce",rows="4",placeholder="公司介绍",
+                                 autocomplete="off",data-required="true") #{about_us.c_introduce}
+                            .form-group
+                                label.col-sm-2.control-label(for='p_cycle_1') 项目周期1
+                                .col-sm-4: input#p_cycle_1.form-control.parsley-validated(name='p_cycle_1',type='text',placeholder='项目周期1',
+                                value="#{about_us.p_cycle_1}",autocomplete="off",data-required="true")
+                                label.col-sm-2.control-label(for='p_cycle_2') 项目周期2
+                                .col-sm-4: input#p_cycle_2.form-control.parsley-validated(name='p_cycle_2',type='text',placeholder='项目周期2',
+                                value="#{about_us.p_cycle_2}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='p_cycle_3') 项目周期3
+                                .col-sm-4: input#p_cycle_1.form-control.parsley-validated(name='p_cycle_3',type='text',placeholder='项目周期3',
+                                value="#{about_us.p_cycle_3}",autocomplete="off")
+                                label.col-sm-2.control-label(for='p_cycle_4') 项目周期4
+                                .col-sm-4: input#p_cycle_4.form-control.parsley-validated(name='p_cycle_4',type='text',placeholder='项目周期4',
+                                value="#{about_us.p_cycle_4}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='p_cycle_5') 项目周期5
+                                .col-sm-4: input#p_cycle_5.form-control.parsley-validated(name='p_cycle_5',type='text',placeholder='项目周期5',
+                                value="#{about_us.p_cycle_5}",autocomplete="off")
+                                label.col-sm-2.control-label(for='p_cycle_6') 项目周期6
+                                .col-sm-4: input#p_cycle_6.form-control.parsley-validated(name='p_cycle_6',type='text',placeholder='项目周期6',
+                                value="#{about_us.p_cycle_6}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='p_cycle_7') 项目周期7
+                                .col-sm-4: input#p_cycle_7.form-control.parsley-validated(name='p_cycle_7',type='text',placeholder='项目周期7',
+                                value="#{about_us.p_cycle_7}",autocomplete="off")
+                                label.col-sm-2.control-label(for='createtime') 创建时间
+                                .col-sm-4: input#createtime.form-control.parsley-validated(name='createtime',type='text',placeholder='创建时间',
+                                value="#{about_us.createtime}",autocomplete="off",data-required="true")
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/about_us') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改
+                             
+
+
+ 

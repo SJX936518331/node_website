@@ -1,0 +1,51 @@
+extends layouts/layout
+append loadtitle
+    -title += ' | 首页-企业优势'
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 企业优势
+                    small 企业优势修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 企业优势修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/e_advantage/update')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{website.id}")
+                                label.col-sm-2.control-label(for='advantage_name1') 企业优势名称1
+                                .col-sm-4: input#advantage_name1.form-control.parsley-validated(name='advantage_name1',type='text',placeholder='企业优势名称1',
+                                value="#{website.advantage_name1}",autocomplete="off",data-required="true")
+                            .form-group
+                                label.col-sm-2.control-label(for='advantage_content1') 企业优势1内容
+                                .col-sm-10: textarea#advantage_content1.textarea.form-control.parsley-validated(name="advantage_content1",rows="4",placeholder="企业优势1内容",
+                                    autocomplete="off",data-required="true") #{website.advantage_content1}
+                            .form-group
+                                label.col-sm-2.control-label(for='advantage_name2') 企业优势名称2
+                                .col-sm-4: input#advantage_name2.form-control.parsley-validated(name='advantage_name2',type='text',placeholder='企业优势名称2',
+                                value="#{website.advantage_name2}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='advantage_content2') 企业优势2内容
+                                .col-sm-10: textarea#advantage_content2.textarea.form-control.parsley-validated(name="advantage_content2",rows="4",placeholder="企业优势2内容",
+                                    autocomplete="off") #{website.advantage_content2}
+                            .form-group
+                                label.col-sm-2.control-label(for='advantage_name3') 企业优势名称3
+                                .col-sm-4: input#advantage_name3.form-control.parsley-validated(name='advantage_name3',type='text',placeholder='企业优势名称3',
+                                value="#{website.advantage_name3}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='advantage_content3') 企业优势3内容
+                                .col-sm-10: textarea#advantage_content3.textarea.form-control.parsley-validated(name="advantage_content3",rows="4",placeholder="企业优势3内容",
+                                    autocomplete="off") #{website.advantage_content3}
+                            .form-group
+                                label.col-sm-2.control-label(for='advantage_name4') 企业优势名称4
+                                .col-sm-4: input#advantage_name4.form-control.parsley-validated(name='advantage_name4',type='text',placeholder='企业优势名称4',
+                                value="#{website.advantage_name4}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='advantage_content4') 企业优势4内容
+                                .col-sm-10: textarea#advantage_content4.textarea.form-control.parsley-validated(name="advantage_content4",rows="4",placeholder="企业优势4内容",
+                                    autocomplete="off") #{website.advantage_content4}
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/e_advantage_photo') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改

@@ -1,0 +1,595 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 图标 */
+
+.banner_img {
+    background: url(../img/web/banner1.png) no-repeat center;
+    background-size: cover;
+}
+
+/* 头部 */
+
+.header ul li:nth-child(2) a,
+.header ul li:nth-child(2) div {
+    color: #389ED9;
+}
+
+.header ul li:nth-child(1) a,
+.header ul li:nth-child(1) div,
+.header ul li:nth-child(3) a,
+.header ul li:nth-child(3) div {
+    color: #333333;
+}
+
+/* 内容部分 */
+
+/* 公用 */
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.container .case_display .title,
+.container .title_ {
+    text-align: center;
+}
+
+/* 案例展示 */
+
+.container .case_display .title {
+    padding-top: 80px;
+}
+
+.container .case_display .title span {
+    display: inline-block;
+    line-height: 32px;
+    padding-bottom: 6px;
+    font-family: Arial;
+    font-size: 32px;
+    color: #666666;
+}
+
+.container .case_display .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #666666;
+}
+
+.container .case_display .case_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 80px;
+}
+
+.container .case_display .case_content .content span {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #333333;
+    line-height: 48px;
+}
+
+.container .case_display .case_content .content span:hover {
+    color: rgb(112, 105, 105);
+}
+
+.container .case_display .case_content .content div {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #666666;
+    line-height: 36px;
+    text-align: left;
+    /* padding: 10px 10px 10px 25px; */
+}
+
+.container .case_display .tab_case ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.container .case_display .tab_case ul li {
+    display: inline-block;
+    width: 144px;
+    margin: 0px 104px 0px 0px;
+}
+
+.container .case_display .tab_case ul li:nth-child(2) {
+    position: relative;
+}
+
+.container .case_display .tab_case ul li:last-child {
+    margin-right: 0px;
+}
+
+/* .container .case_display .tab_case ul li:nth-child(2):hover .container .case_display .tab_case ul li.first   div .line_{
+     transform: translate(120,0) 0.3s;
+     display: none;
+}  */
+
+/* .container .case_display .tab_case ul li:hover  .first  div .line_ {
+    transform: translate(120,120) 0.3s; 
+     animation: mymove 0.3s;
+    transition: 0.3s;
+    margin-left: 80px;
+    border-bottom: 6px solid rgb(92, 130, 255);
+} */
+
+/* @keyframes mymove
+{
+.container .case_display .tab_case ul li:nth-child(1){ margin-left:200px;}   
+to {margin-left:0px;}
+}  */
+
+.container .case_display .tab_case ul li span a {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #333333;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.container .case_display .tab_case ul li div {
+    font-size: 12px;
+    font-family: Arial;
+    color: #333333;
+    width: 144px;
+}
+
+.container .case_display .tab_case ul li:nth-child(1) div .line_ {
+    margin-top: 20px;
+    border-bottom: 6px solid#389ED9;
+}
+
+.container .case_display .tab_case ul li:nth-child(1) span a {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #389ED9;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.container .case_display .tab_case ul li:nth-child(1) div {
+    width: 144px;
+    font-size: 12px;
+    font-family: Arial;
+    color: #389ED9;
+}
+
+.container .case_display .tab_case .line {
+    text-align: center;
+}
+
+.container .case_display .tab_case .line span {
+    display: inline-block;
+    margin-bottom: 30px;
+    width: 1024px;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+/* /量川云司机端app */
+
+.container .case_display .case_content {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.container .case_display .case_content div:not(.content) {
+    padding-right: 20px;
+}
+
+.container .case_display .case_content .content {
+    width: 20%;
+    margin: 0;
+    margin-right: 10px;
+    padding-left: 100px;
+}
+
+.container .case_display .case_content .content div {
+    text-align: left;
+}
+
+/* 手机配件精选app */
+
+.container .case_display .case_content_phone {
+    width: 100%;
+    background: url(../img/web/app_bg.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 45px 0px 72px 0px;
+}
+
+.container .case_display .case_content_phone .img {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.container .case_display .case_content_phone .content span {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #333333;
+    line-height: 48px;
+}
+
+.container .case_display .case_content_phone .content span:hover {
+    color: rgb(112, 105, 105);
+}
+
+.container .case_display .case_content_phone .content div {
+    font-size: 14px;
+}
+
+.container .case_display .case_content_phone div img {
+    width: 224px;
+    height: 459px;
+}
+
+.container .case_display .case_content_phone .content {
+    width: 20%;
+}
+
+.container .case_display .case_content_phone .content {
+    padding-top: 80px;
+}
+
+.container .case_display .case_content_phone .content div {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #666666;
+    line-height: 36px;
+    text-align: left;
+    padding: 10px;
+}
+
+/* 拼客App */
+
+.container .case_display .case_pk .content span {
+    font-family: "微软雅黑";
+    font-size: 24px;
+    color: #333333;
+    line-height: 48px;
+}
+
+.container .case_display .case_pk .content span:hover {
+    color: rgb(112, 105, 105);
+}
+
+.container .case_display .case_pk .content div {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    color: #666666;
+    line-height: 36px;
+}
+
+.container .case_display .case_pk .img {
+    padding: 20px 30px 0px 10px;
+}
+
+.container .case_display .case_pk {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 78px 0px;
+}
+
+.container .case_display .case_pk .content {
+    width: 20%;
+}
+
+.container .case_display .case_pk .content {
+    padding-top: 80px;
+    padding-right: 30px;
+}
+
+.container .case_display .case_pk .content div {
+    text-align: left;
+    padding: 10px;
+}
+
+/* 媒体查询(针对移动端) */
+
+@media screen and (max-width:768px) {
+    /* 公用 */
+    .container .case_display .title span {
+        font-size: 22px;
+        line-height: 32px;
+        padding-bottom:0px;
+    }
+    .container .case_display .title_ span {
+        font-size: 16px;
+    }
+    /* 案例展示 */
+    /* 特效取消 */
+    .container .case_display .tab_case ul li:hover div .line_ {
+        position: relative;
+        left: 0px;
+        right: 0px;
+    }
+    .container .case_display .title {
+        padding-top: 40px;
+    }
+    .container .case_display .case_line {
+        width: 64px;
+        height: 6px;
+        margin-bottom: 32px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .case_display .tab_case ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    .container .case_display .tab_case ul li {
+        display: inline-block;
+        width: 55%;
+        margin: 0px;
+    }
+    .container .case_display .tab_case ul li span a {
+        font-size: 15px;
+        color: #389ED9;
+        text-decoration: none;
+    }
+    .container .case_display .tab_case ul li div {
+        width: 100%;
+        font-size: 10px;
+        color: #389ED9;
+    }
+    .container .case_display .tab_case ul li:nth-child(1) div .line_ {
+        width: 100%;
+        margin-top: 12px;
+        border-bottom: 3px solid #389ED9;
+    }
+    .container .case_display .tab_case ul li:nth-child(1) span a {
+        font-size: 15px;
+    }
+    .container .case_display .tab_case ul li:nth-child(1) div {
+        width: 100%;
+        font-size: 10px;
+    }
+    .container .case_display .tab_case .line {
+        text-align: center;
+    }
+    .container .case_display .tab_case .line span {
+        display: inline-block;
+        margin-bottom: 30px;
+        width: 100%;
+        border-bottom: 1px solid #D6D6D6;
+    }
+    /* 量川云司机端App */
+    .container .case_display .case_content div:not(.content) {
+        padding-right: 0px;
+    }
+    .container .case_display .case_content {
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .container .case_display .case_content .content {
+        width: 100%;
+        margin: 0;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .container .case_display .case_content div img {
+        width: 200px;
+        height: 150px;
+    }
+    .container .case_display .case_content .content div {
+        text-align: left;
+        padding: 5px;
+    }
+    .container .case_display .case_content .content span {
+        text-align: left;
+    }
+    .container .case_display .case_content .content span {
+        font-size: 16px;
+        line-height: 24px
+    }
+    .container .case_display .case_content .content div {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 5px 5px 5px 5px;
+        width: 100%;
+    }
+    /* 手机配件精选app */
+    .container .case_display .case_content_phone {
+        background: url(../img/web/app_bg.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .container .case_display .case_content_phone .content {
+        width: 50%;
+        margin: 0;
+        margin-right: 10px;
+        padding-top: 25px;
+    }
+    .container .case_display .case_content_phone div img {
+        width: 80px;
+        height: 150px;
+    }
+    .container .case_display .case_content_phone .img {
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+    .container .case_display .case_content_phone .content div {
+        text-align: left;
+        padding: 5px 0px 0px 15px;
+        font-size: 12px;
+        line-height: 18px;
+        width: 85%;
+    }
+    .container .case_display .case_content_phone .content span {
+        text-align: left;
+    }
+    .container .case_display .case_content_phone .content span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    /* 拼客app */
+    .container .case_display .case_pk {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .container .case_display .case_pk .content {
+        width: 50%;
+        margin: 0;
+        padding-left: 10px;
+        padding-top: 25px;
+        padding-right: 0px;
+    }
+    .container .case_display .case_pk .img img {
+        width: 80px;
+        height: 150px;
+    }
+    .container .case_display .case_pk .img {
+        padding: 0;
+        padding-right: 10px;
+    }
+    .container .case_display .case_pk .content div {
+        font-size: 12px;
+        text-align: left;
+        padding: 5px 15px 5px 5px;
+        line-height: 18px;
+    }
+    .container .case_display .case_pk .content span {
+        text-align: left;
+    }
+    .container .case_display .case_pk .content span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .header ul {
+        margin: 10px 0px 10px 40%;
+        flex: 2;
+        list-style: none;
+    }
+    .container .case_display .case_content .content div {
+        font-size: 16px;
+    }
+    .container .case_display .case_content .content span {
+        font-size: 18px;
+    }
+    .container .case_display .case_content_phone .content span {
+        font-size: 18px;
+    }
+    .container .case_display .case_content_phone .content div {
+        font-size: 16px;
+    }
+    .container .case_display .case_pk .content span {
+        font-size: 18px;
+    }
+    .container .case_display .case_pk .content div {
+        font-size: 16px;
+    }
+}
+
+/* 针对于ipad */
+
+@media screen and (min-width:768px) and (max-width:800px) {
+
+    .container .case_display .tab_case ul li:nth-child(1) div {
+        width: 100%;
+        font-size: 10px;
+    }
+    .container .case_display .case_content .content {
+        width: 30%;
+    }
+    .container .case_display .case_content div img {
+        width: 250px;
+        height: 200px;
+    }
+    .container .case_display .case_content .content div {
+        line-height: 25px;
+    }
+    .container .case_display .case_content div:not(.content) {
+        padding-left: 0px;
+    }
+    .container .case_display .case_content_phone .content {
+        width: 30%;
+        padding-top: 40px;
+    }
+    .container .case_display .case_content_phone .content div {
+        padding-left: 25px;
+        line-height: 25px;
+    }
+    .container .case_display .case_content_phone div img {
+        width: 112px;
+        height: 225px;
+    }
+    .container .case_display .case_pk .content {
+        width: 30%;
+        padding-top: 40px;
+    }
+    .container .case_display .case_pk .img img {
+        width: 112px;
+        height: 225px;
+    }
+    .container .case_display .case_pk .content div {
+        padding-right: 25px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1100px) {
+    .container .case_display .case_content div img {
+        width: 388px;
+        height: 242px;
+    }
+    .container .case_display .case_content .content {
+        width: 30%;
+    }
+    .container .case_display .case_content .content div {
+        line-height: 22px;
+    }
+    .container .case_display .case_content_phone div img {
+        width: 112px;
+        height: 228px;
+    }
+    .container .case_display .case_content_phone .content div {
+        line-height: 18px;
+    }
+    .container .case_display .case_content_phone .content span {
+        line-height: 24px;
+    }
+    .container .case_display .case_pk .img img {
+        width: 112px;
+        height: 228px;
+    }
+    .container .case_display .case_pk .content span {
+        line-height: 24px;
+    }
+    .container .case_display .case_pk .content div {
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width:1920px) and (max-width:2200px) {
+    .header ul {
+        margin: 10px 0px 10px 70%;
+        flex: 2;
+        list-style: none;
+    }
+}

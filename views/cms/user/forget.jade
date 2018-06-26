@@ -1,0 +1,45 @@
+extends ../layouts/layout
+append loadtitle
+    -title += ' | 设置密码'
+
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 设置密码
+                    small 密码修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 密码修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/user/forget')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{user.id}")
+                                label.col-sm-2.control-label(for='password') 新密码
+                                .col-sm-4: input#password.form-control.parsley-validated(name='password',type='password',placeholder='请输入新密码',
+                                value="#{user.password}",data-required="true")
+                            .form-group
+                                label.col-sm-2.control-label(for='repassword') 重复密码
+                                .col-sm-4: input#repassword.form-control.parsley-validated(name='repassword',type='password',placeholder='请输入重复密码',
+                                value="#{user.newpassrepasswordword}",data-required="true")
+                            .form-group
+                                label.col-sm-2.control-label(for='status') 用户状态
+                                .col-sm-4: input#status(name='status',type='checkbox',data-toggle="switch",checked=user.status==1,data-on-text="启用",data-off-text="禁用")    
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/user/forget') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改
+
+append scripts
+    script(type='text/javascript',src='/plugins/jquery-file-upload/js/jquery.fileupload-ajax.js')
+    script(type='text/javascript').
+      $('.btn-info').on('click',function(){
+          var vaild = $('form').parsley().validate();
+          if(!vaild)
+           return;
+           if($('#password').val()!= $('#repassword').val()){
+               confirm("密码不一致"); 
+           }
+      });
+    
+      

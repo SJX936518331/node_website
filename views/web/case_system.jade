@@ -1,0 +1,66 @@
+block loadtitle
+    -var title= website.title
+include includes/header
+include ../core/scripts
+append styles
+   link(rel='stylesheet', href='/styles/main.css')
+   link(rel='stylesheet', href='/styles/system.css')
+   link(rel='shortcut icon',href='/img/web/logo.ico')
+append loadtitle
+    -title += ' | 经典案例-系统开发'
+
+
+
+
+.banner_img
+.container
+    .case_display
+        .title
+            span Display cases
+        .title_
+            span 案例展示
+        .case_line
+        .tab_case
+            ul
+                li
+                    span.first
+                        a(href='/case_app') App开发
+                    div
+                        .line_
+                li
+                    span
+                        a(href='/case_wechat') 微信开发
+                    div
+                        .line_
+                li
+                    span
+                        a(href='/case_website') 企业官网
+                    div
+                        .line_
+                li
+                    span
+                        a(href='/case_system') 管理系统
+                    div
+                        .line_
+            .line
+                span
+        .case_content
+            .content
+                span #{case_system.name_1}
+                div  #{case_system.comment_1}
+            .img.lc1
+                img(width='559px', height='322px', src='/img/web/system_lc1.png')
+            .img.lc2
+                img(width='413px', height='238px', src='/img/web/system_lc2.png')
+        .case_content_zrj
+            .img.zrj1
+                img(width='558px', height='321px', src='/img/web/system_zrj1.png')
+            .img.zrj2
+                img(width='454px', height='261px', src='/img/web/system_zrj2.png')
+            .content
+                span #{case_system.name_2}
+                div  #{case_system.comment_2}
+include includes/footer                
+append scripts
+    script(type = 'text/javascript', src = "/js/web/addviews.js")
+    script(type = 'text/javascript', src = "/js/web/index.js")

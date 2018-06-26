@@ -1,0 +1,91 @@
+block loadtitle
+    -var title= website.title
+include includes/header
+include ../core/scripts
+append styles
+  link(rel='stylesheet', href='/styles/main.css')
+  link(rel='stylesheet', href='/styles/about_us.css')
+  link(rel='shortcut icon',href='/img/web/logo.ico')
+append loadtitle
+    -title += ' | 经典案例-APP开发'
+
+
+.banner_img
+.container
+    .title
+        span Enterprise information
+    .title_
+        span 企业信息
+    .enterprise_line
+    .information
+        .content_
+            .content
+                div  #{about_us.c_introduce}
+            .img
+                img(width='622px', height='358px', src='/img/web/enterprise_Information.png')
+    .cycle
+        .title.cycle_title
+            span Project Cycle
+        .title_.cycle_title_
+            span 项目周期
+        .p_cycle_line
+        .content_
+            ul
+                li
+                    span #{about_us.p_cycle_1}
+                span.cycle_line
+                li
+                    span #{about_us.p_cycle_2}
+                span.cycle_line
+                li
+                    span #{about_us.p_cycle_3}
+                span.cycle_line
+                li
+                    span #{about_us.p_cycle_4}
+        .column-line
+            div
+                span
+        .content_1
+            ul
+                li
+                    span #{about_us.p_cycle_5}
+                span.cycle_line
+                li
+                    span #{about_us.p_cycle_6}
+                span.cycle_line
+                li
+                    span #{about_us.p_cycle_7}
+    .company
+        .title
+            span Company environment
+        .title_
+            span 公司环境
+        .company_line
+        .content_
+            ul
+                li
+                    .img
+                        img(width='150px', height='150px', src='/img/web/environment1.png')
+                li
+                li
+                    .img
+                        img(width='150px', height='150px', src='/img/web/environment2.png')
+                li
+                    .img
+                        img(width='150px', height='150px', src='/img/web/environment3.png')
+        .content_1
+            ul
+                li
+                    .img
+                        img(width='150px', height='150px', src='/img/web/environment4.png')
+                li
+                    .img
+                        img(width='150px', height='150px', src='/img/web/environment5.png')
+                li
+                li
+                    .img
+                        img(width='150px', height='150px', src='/img/web/environment6.png')
+include includes/footer                
+append scripts
+    script(type = 'text/javascript', src = "/js/web/addviews.js")
+    script(type = 'text/javascript', src = "/js/web/index.js")

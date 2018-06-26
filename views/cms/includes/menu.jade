@@ -1,0 +1,45 @@
+.sider_bar: .relative_box
+    .menu_title
+        .icon.left
+        p 菜单/MENU
+    .menu_list(style='top:40px'): .list_outer.content.mcustomscrollbox._mCS_1
+        .mCustomScrollBox.mCS-light#mCSB_1(style="position:relative; height:100%; overflow:hidden; max-width:100%;")
+            .mCSB_container.mCS_no_scrollbar(style="position:relative; top:0;")
+                .menu_single: a(href='/cms/e_advantage',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-id-card-o
+                    p 企业优势
+                //- .menu_single: a(href='/cms/e_advantage_photo',target='_self'): .menu_parent
+                //-     .menu_icon: i.fa.fa-id-card-o
+                //-     p 企业优势图片
+                .menu_single: a(href='/cms/s_advantage',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-id-card-o
+                    p 服务优势
+                .menu_single: a(href='/cms/case_share',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-id-card-o
+                    p 案例分享
+                .menu_single: a(href='/cms/s_process',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-id-card-o
+                    p 服务流程
+                .menu_single: a(href='/cms/case_app',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-github-alt
+                    p 案例分享-APP
+                .menu_single: a(href='/cms/case_wechat',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-wechat
+                    p 案例分享-微信开发
+                .menu_single: a(href='/cms/case_website',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-tv
+                    p 案例分享-企业官网
+                .menu_single: a(href='/cms/case_system',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-bank
+                    p 案例分享-管理系统
+                .menu_single: a(href='/cms/about_us',target='_self'): .menu_parent
+                    .menu_icon: i.fa.fa-user-circle
+                    p 关于我们
+                               
+            .mCSB_scrollTools(style="position: absolute; display: none;")
+                a.mCSB_buttonUp(oncontextmenu="return false;")
+                .mCSB_draggerContainer
+                    .mCSB_dragger(style="position: absolute; height: 540px; top: 0px;",oncontextmenu="return false;")
+                        .mCSB_dragger_bar(style="position: relative; line-height: 540px;")
+                    .mCSB_draggerRail
+                a.mCSB_buttonDown(oncontextmenu="return false;")

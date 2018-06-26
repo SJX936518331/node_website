@@ -1,0 +1,62 @@
+block loadtitle
+    -var title= website.title
+include includes/header
+include ../core/scripts
+append styles
+   link(rel='stylesheet', href='/styles/main.css')
+   link(rel='stylesheet', href='/styles/weChat.css')
+   link(rel='shortcut icon',href='/img/web/logo.ico')
+append loadtitle
+    -title += ' | 经典案例-微信开发'
+
+
+.banner_img
+.container
+    .case_display
+        .title
+            span Display cases
+        .title_
+            span 案例展示
+        .case_line
+        .tab_case
+            ul
+                li
+                    span.first
+                        a(href='/case_app') App开发
+                    div
+                        .line_
+                li
+                    span
+                        a(href='/case_wechat') 微信开发
+                    div
+                        .line_
+                li
+                    span
+                        a(href='/case_website') 企业官网;
+                    div
+                        .line_
+                li
+                    span
+                        a(href='/case_system') 管理系统
+                    div
+                        .line_
+            .line
+                span
+        .case_content
+            .img
+                img(width='766px', height='484px', src='/img/web/gzh_coffie.png')
+            .content
+                span #{case_wechat.name_1}
+                div  #{case_wechat.comment_1}
+        .case_content_lc
+            .content
+                span #{case_wechat.name_2}
+                div #{case_wechat.comment_2}
+            .img
+                img(src='/img/web/gzh_lcy1.png')
+            .img
+                img(src='/img/web/gzh_lcy2.png')
+include includes/footer                
+append scripts
+    script(type = 'text/javascript', src = "/js/web/addviews.js")
+    script(type = 'text/javascript', src = "/js/web/index.js")

@@ -1,0 +1,70 @@
+extends layouts/layout
+append loadtitle
+    -title += ' | 首页-服务流程'
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 服务流程
+                    small 服务流程修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 服务流程修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/s_process/update')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{website.id}")
+                                label.col-sm-2.control-label(for='s_process_1') 服务流程1
+                                .col-sm-4: input#s_process_1.form-control.parsley-validated(name='s_process_1',type='text',placeholder='服务流程1',
+                                value="#{website.s_process_1}",autocomplete="off",data-required="true")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_1_content') 服务流程1内容
+                                .col-sm-10: textarea#s_process_1_content.textarea.form-control.parsley-validated(name="s_process_1_content",rows="4",placeholder="服务流程1内容",
+                                    autocomplete="off",data-required="true") #{website.s_process_1_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_2') 服务流程2
+                                .col-sm-4: input#s_process_2.form-control.parsley-validated(name='s_process_2',type='text',placeholder='服务流程2',
+                                value="#{website.s_process_2}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_2_content') 服务流程2内容
+                                .col-sm-10: textarea#s_process_2_content.textarea.form-control.parsley-validated(name="s_process_2_content",rows="4",placeholder="服务流程2内容",
+                                    autocomplete="off") #{website.s_process_2_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_3') 服务流程3
+                                .col-sm-4: input#s_process_3.form-control.parsley-validated(name='s_process_3',type='text',placeholder='服务流程3',
+                                value="#{website.s_process_3}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_3_content') 服务流程3内容
+                                .col-sm-10: textarea#s_process_3_content.textarea.form-control.parsley-validated(name="s_process_3_content",rows="4",placeholder="服务流程3内容",
+                                    autocomplete="off") #{website.s_process_3_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_4') 服务流程4
+                                .col-sm-4: input#s_process_4.form-control.parsley-validated(name='s_process_4',type='text',placeholder='服务流程4',
+                                value="#{website.s_process_4}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_4_content') 服务流程4内容
+                                .col-sm-10: textarea#s_process_4_content.textarea.form-control.parsley-validated(name="s_process_4_content",rows="4",placeholder="服务流程4内容",
+                                    autocomplete="off") #{website.s_process_4_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_5') 服务流程5
+                                .col-sm-4: input#s_process_5.form-control.parsley-validated(name='s_process_5',type='text',placeholder='服务流程5',
+                                value="#{website.s_process_5}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_5_content') 服务流程5内容
+                                .col-sm-10: textarea#s_process_5_content.textarea.form-control.parsley-validated(name="s_process_5_content",rows="4",placeholder="服务流程5内容",
+                                    autocomplete="off") #{website.s_process_5_content}
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_6') 服务流程6
+                                .col-sm-4: input#s_process_6.form-control.parsley-validated(name='s_process_6',type='text',placeholder='服务流程6',
+                                value="#{website.s_process_6}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_process_6_content') 服务流程6内容
+                                .col-sm-10: textarea#s_process_6_content.textarea.form-control.parsley-validated(name="s_process_6_content",rows="4",placeholder="服务流程6内容",
+                                    autocomplete="off") #{website.s_process_6_content}
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/e_advantage') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改
+
+
+

@@ -1,0 +1,275 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 导航部分 */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    background-color: white;
+}
+
+.header ul {
+    margin: 10px 0px 10px 40%;
+    flex: 2;
+    list-style: none;
+}
+
+.header ul li {
+    float: left;
+    text-align: center;
+    margin: 5px 60px 0px 0px;
+}
+
+.header ul li:nth-child(3) {
+    margin-right: 32px;
+}
+
+.header ul li:first-child:hover div,
+.header ul li:first-child:hover a {
+    transition: 0.2s;
+    color: #389ED9;
+}
+
+.header ul li:first-child:hover .header ul li:nth-child(2) div {
+    color: black;
+}
+
+.header ul li:nth-child(2):hover a,
+.header ul li:nth-child(2):hover div {
+    transition: 0.2s;
+    color: #389ED9;;
+}
+.header ul li:nth-child(3):hover a,
+.header ul li:nth-child(3):hover div {
+    transition: 0.2s;
+    color: #389ED9;;
+}
+.header ul li:last-child:hover a,
+.header ul li:last-child:hover div {
+    transition: 0.2s;
+    color: #389ED9;;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #333333;
+    font-family: "微软雅黑";
+    font-size: 20px;
+}
+
+.header ul li div {
+    text-align: center;
+    color: #333333;
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.header ul li:nth-child(1) a,
+.header ul li:nth-child(1) div {
+    color: #389ED9;
+}
+
+/* 图标 */
+
+.logo {
+    flex: 1;
+    width: 158px;
+    margin: 10px 0px 10px 30px;
+    height: 46px;
+}
+
+.banner_img {
+    background: url(../img/web/banner.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 680px;
+}
+
+/* 页脚 */
+
+footer {
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+}
+
+footer .footer {
+    width: 100%;
+}
+
+footer .footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer ul li {
+    float: left;
+}
+
+footer .footer ul li a {
+    font-family: "微软雅黑";
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+footer .footer ul li:last-child span a{
+    font-family: "微软雅黑";
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+} 
+footer .footer ul li a:hover {
+    color: rgb(243, 59, 59);
+}
+
+.footer .show {
+    padding-top: 36px;
+    padding-bottom: 24px;
+}
+
+.footer .show li span {
+    color: white;
+}
+
+.follow {
+    width: 100%;
+}
+
+.follow .code .img {
+    margin-bottom: 18px;
+}
+
+.follow .code .content {
+    margin-bottom: 24px;
+}
+
+.follow .code .img,
+.follow .code .content {
+    text-align: center;
+}
+
+.follow .content {
+    color: white;
+    margin: 0;
+}
+
+.follow ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.follow ul li {
+    text-align: center;
+}
+
+.follow ul li:last-child {
+    padding-bottom: 24px;
+}
+
+.follow ul li span {
+    font-family: "微软雅黑";
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.follow ul li:nth-child(4) {
+    text-align: center;
+}
+
+.follow ul li:nth-child(4) span {
+    display: inline-block;
+    width: 960px;
+    border-bottom: 1px solid white;
+}
+
+.follow ul li:last-child span:first-child {
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+/* 媒体查询(针对移动设备) */
+@media screen and (max-width:768px) {
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    .header {
+        width: 100%;
+        text-align: left;
+    }
+    .header .logo {
+        margin: 15px 0px 10px 10px;
+
+    }
+    .header a img {
+        width: 79px;
+        height: 24px;
+    }
+    .header ul {
+        display: inline-block;
+        width: 60%;
+        margin: 0px;
+        padding: 0px 0px 0px 20%;
+    }
+    .header ul li {
+        margin: 0px 5px 0px 0px;
+        float: left;
+        text-align: center;
+    }
+    .header ul li:nth-child(3){
+        margin-right: 0px;
+    }
+    .header ul li div {
+        text-align: center;
+        font-size: 8px;
+    }
+    .header ul li a {
+        font-size: 14px;
+    }
+    .header ul li a,
+    .header ul li div {
+        margin: 0px 10px 0px 0px;
+    }
+    .banner_img {
+        width: 100%;
+        height: 200px;
+    }
+    .follow ul li:nth-child(4) span {
+        width: 80%;
+    }
+    .follow ul li span {
+        color: white;
+        font-size: 13px;
+    }
+    footer .footer .show li a {
+        font-size: 15px;
+        color: white;
+    }
+    .code .content {
+        font-size: 15px;
+        color: white;
+    }
+}
+/* 针对ipad-pro的媒体查询 */
+
+@media screen and (min-width:1024px) and (max-width:1100px) {
+    .header ul {
+        margin: 10px 0px 10px 30%;
+    }
+}

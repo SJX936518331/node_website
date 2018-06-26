@@ -1,0 +1,37 @@
+extends layouts/layout
+append loadtitle
+    -title += ' | 首页-服务优势'
+block cms_content
+    .content_main
+        mixin toastr(status, msg)
+        .container-fluid
+            section.todo-content
+                div.panel-title.pll 服务优势
+                    small 服务优势修改
+            .col-md-12: .box.box-info
+                .box-header.with-border: h3.box-title 服务优势修改
+                form.form-horizontal(data-validate="parsley", method='post', action='/cms/s_advantage/update')
+                    .box-body
+                        .col-sm-8
+                            .form-group
+                                input#id(name='id',type='hidden',value="#{website.id}")
+                                label.col-sm-2.control-label(for='s_advantage_1') 服务优势名称1
+                                .col-sm-4: input#s_advantage_1.form-control.parsley-validated(name='s_advantage_1',type='text',placeholder='服务优势名称1',
+                                value="#{website.s_advantage_1}",autocomplete="off",data-required="true")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_advantage_2') 服务优势名称3
+                                .col-sm-4: input#s_advantage_2.form-control.parsley-validated(name='s_advantage_2',type='text',placeholder='服务优势名称3',
+                                value="#{website.s_advantage_2}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_advantage_3') 服务优势名称3
+                                .col-sm-4: input#s_advantage_3.form-control.parsley-validated(name='s_advantage_3',type='text',placeholder='服务优势名称3',
+                                value="#{website.s_advantage_3}",autocomplete="off")
+                            .form-group
+                                label.col-sm-2.control-label(for='s_advantage_4') 服务优势名称4
+                                .col-sm-4: input#s_advantage_4.form-control.parsley-validated(name='s_advantage_4',type='text',placeholder='服务优势名称4',
+                                value="#{website.s_advantage_4}",autocomplete="off")            
+                            .form-group: .col-sm-offset-2.col-sm-10
+                                a.btn.btn-default(type='button',href='/cms/e_advantage_photo') 取消更改
+                                button.btn.btn-info.mll(type='submit') 确认更改
+
+

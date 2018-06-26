@@ -1,0 +1,609 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 图标 */
+
+.banner_img {
+    background: url(../img/web/about_us_banner.png) no-repeat center;
+    background-size: cover;
+}
+
+/* 头部 */
+
+.header ul li:nth-child(3) a,
+.header ul li:nth-child(3) div {
+    color: #389ED9;
+}
+
+.header ul li:nth-child(1) a,
+.header ul li:nth-child(1) div,
+.header ul li:nth-child(2) a,
+.header ul li:nth-child(2) div {
+    color: #333333;
+}
+
+/* 内容部分 */
+
+/* /企业信息 */
+
+.container .information .content_ {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .information .content_ .content {
+    width: 20%;
+    margin: 0;
+}
+
+.container .information .content_ .content {
+    margin-right: 10px;
+    padding-top: 60px;
+}
+
+.container .information .content_ .img {
+    padding-left: 10px;
+    padding-bottom: 80px;
+}
+
+/* .container .information .content_ .content span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #666666;
+    line-height: 48px;
+} */
+
+.container .information .content_ .content span:hover {
+    color: rgb(78, 78, 78);
+}
+
+.container .information .content_ .content div {
+    font-family: "黑体";
+    font-size: 20px;
+    color: #666666;
+    line-height: 32px;
+    text-align: left;
+}
+
+/* 公用 */
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+.container .title {
+    padding-top: 80px;
+}
+
+.container .title span {
+    display: inline-block;
+    line-height: 32px;
+    font-family: Arial;
+    padding-bottom: 6px;
+    font-size: 32px;
+    color: #666666;
+}
+
+.container .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #666666;
+}
+
+.container .enterprise_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.container .information .content_ .content {
+    padding-left: 70px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* 项目周期 */
+
+.container .cycle {
+    background: url(../img/web/cycle_bg.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.container .cycle .content_ {
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+.container .cycle .p_cycle_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.container .cycle .title span {
+    display: inline-block;
+    line-height: 32px;
+    font-family: Arial;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.container .cycle .title_ span {
+    font-family: "黑体";
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.container .cycle .title,
+.service .title_ {
+    text-align: center;
+}
+
+.container .cycle .content_ ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-left: -30%;
+}
+
+.container .cycle .content_ ul li {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+    border-radius: 50%;
+}
+
+.container .cycle .content_ ul li span {
+    font-family: "黑体";
+    font-size: 20px;
+    color: #333333;
+    line-height: 32px;
+}
+
+.container .cycle .content_ ul li span:hover {
+    color: white;
+}
+
+.container .cycle .content_ ul .cycle_line {
+    display: inline-block;
+    width: 68px;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+
+/* .column-line {
+    height: 40px;
+    width: 5%;
+    border-left: 1px solid rgb(255, 255, 255);
+    margin-left: 67.5%;
+    width: 100%;
+} */
+
+.container .cycle .column-line {
+    /* height: 30px;
+    width: 5%;
+    border-left: 1px solid rgb(255, 255, 255);
+    margin-left: 85.5%; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: -30%;
+}
+
+.container .cycle .column-line div {
+    width: 128px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .cycle .column-line div span {
+    /* display: inline-block;
+    height: 30px; */
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
+.container .cycle .content_1 ul {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin-left: -30%;
+    padding-bottom: 20px;
+}
+
+.container .cycle .content_1 ul li {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+    border-radius: 50%;
+}
+
+.container .cycle .content_1 ul li span {
+    font-family: "黑体";
+    font-size: 20px;
+    color: #333333;
+    line-height: 32px;
+}
+
+.container .cycle .content_1 ul li span:hover {
+    color: white;
+}
+
+.container .cycle .content_1 ul .cycle_line {
+    display: inline-block;
+    width: 68px;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+
+/* 公司环境 */
+
+.container .company {
+    width: 100%;
+}
+
+.container .company .company_line {
+    display: inline-block;
+    height: 12px;
+    border-bottom: 6px #389ED9 solid;
+    width: 96px;
+    margin-bottom: 64px;
+}
+
+.container .company .content_ {
+    width: 100%;
+    padding: 0px;
+}
+
+.container .company .content_ ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .company .content_ ul li {
+    width: 256px;
+    height: 220px;
+}
+
+.container .company .content_ ul li:nth-child(2) {
+    background-color: #F6F6F6;
+}
+
+.container .company .content_ ul li .img {
+    width: 256px;
+    height: 220px;
+}
+
+.container .company .content_ ul li .img img {
+    width: 256px;
+    height: 220px;
+}
+
+.container .company .content_1 {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+.container .company .content_1 ul li {
+    width: 256px;
+    height: 220px;
+}
+
+.container .company .content_1 ul li:nth-child(3) {
+    background-color: #F6F6F6;
+}
+
+.container .company .content_1 ul li .img {
+    width: 256px;
+    height: 220px;
+}
+
+.container .company .content_1 ul li .img img {
+    width: 256px;
+    height: 220px;
+}
+
+.container .company .content_1 ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 媒体查询 */
+
+@media screen and (max-width:768px) {
+    /* 公用 */
+    .container {
+        width: 100%;
+    }
+    .container .title span {
+        font-size: 22px;
+    }
+    /* .container .cycle .cycle_title span, .container .cycle .cycle_title_ span{
+        color: rgb(0, 0, 0);
+    } */
+    .container .title_ span {
+        font-size: 16px;
+    }
+    /* 企业信息 */
+    .container .enterprise_line {
+        height: 6px;
+        width: 64px;
+        margin-bottom: 32px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .information .content_ {
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .container .information .content_ .content {
+        flex: 2;
+        width: 50%;
+        margin: 0;
+        padding-top: 0px;
+        padding-left: 20px;
+    }
+    .container .information .content_ .img {
+        flex: 1;
+        width: 50%;
+        padding-top: 0px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+    }
+    .container .information .content_ .img img {
+        width: 150px;
+        height: 110px;
+    }
+    .container .information .content_ .content span {
+        text-align: left;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 1px;
+    }
+    .container .information .content_ .content div {
+        font-size: 12px;
+        text-align: left;
+        padding: 10px;
+        line-height: 20px;
+    }
+    /* 项目周期 */
+    .container .cycle {
+        background: url(../img/cycle_bg.png) no-repeat center;
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    .container .cycle .p_cycle_line {
+        height: 6px;
+        width: 64px;
+        margin-bottom: 32px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .cycle .title span {
+        font-size: 22px;
+    }
+    .container .cycle .title_ span {
+        font-size: 16px;
+    }
+    .container .cycle .title,
+    .service .title_ {
+        text-align: center;
+    }
+    .container .cycle .content_ ul {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        margin-left: -4%;
+    }
+    .container .cycle .content_ ul li {
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+    }
+    .container .cycle .content_ ul li span {
+        font-size: 10px;
+    }
+    .container .cycle .content_ ul .cycle_line {
+        display: inline-block;
+        width: 30px;
+        border-bottom: 1px solid white;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    .container .cycle .column-line {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -4%;
+    }
+    .container .cycle .column-line div {
+        width: 60px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .container .cycle .column-line div span {
+        border-left: 1px solid rgb(255, 255, 255);
+    }
+    .container .cycle .content_1 ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        margin-left: -4%;
+    }
+    .container .cycle .content_1 ul li {
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 50%;
+    }
+    .container .cycle .content_1 ul li span {
+        font-size: 10px;
+    }
+    .container .cycle .content_1 ul .cycle_line {
+        display: inline-block;
+        width: 30px;
+        margin-top: 0px;
+        border-bottom: 1px solid white;
+        margin-bottom: 30px;
+    }
+    .container .cycle .content_ {
+        margin-top: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+        /* margin-left: -4%; */
+    }
+    /* 公司环境 */
+    .container .title {
+        padding-top: 40px;
+    }
+    .container .company {
+        width: 100%;
+    }
+    .container .company .company_line {
+        width: 64px;
+        margin-bottom: 32px;
+        height: 6px;
+        border-bottom: 3px #389ED9 solid;
+    }
+    .container .company .content_ {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    .container .company .content_ ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 90px;
+    }
+    .container .company .content_ ul li {
+        width: 90px;
+        height: 90px;
+    }
+    .container .company .content_ ul li .img {
+        width: 90px;
+        height: 90px;
+    }
+    .container .company .content_ ul li .img img {
+        width: 90px;
+        height: 90px;
+    }
+    .container .company .content_1 ul li {
+        width: 90px;
+        height: 90px;
+    }
+    .container .company .content_1 ul li .img {
+        width: 90px;
+        height: 90px;
+    }
+    .container .company .content_1 ul li .img img {
+        width: 90px;
+        height: 90px;
+    }
+    .container .company .content_1 {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .container .company .content_1 ul {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 90px;
+    }
+}
+
+/* 针对于ipad */
+
+@media screen and (min-width:768px) and (max-width:799px) {
+    .header ul {
+        padding: 0px 0px 0px 60%;
+    }
+    .container .cycle .content_ ul {
+        margin-left: -25%;
+    }
+    .container .cycle .column-line {
+        margin-left: -25%;
+    }
+    .container .cycle .content_1 ul {
+        margin-left: -25%;
+    }
+    .container .information .content_ .content div {
+        width: 50%;
+        padding-left: 150px;
+    }
+    .container .information .content_ .img {
+        padding-right: 250px;
+    }
+}
+
+/* 针对于ipad-pro */
+
+@media screen and (min-width:1024px) and (max-width:1100px) {
+    .container .information .content_ .content {
+        padding-left: 0px;
+        text-align: center;
+        margin-top: 0px;
+        width: 30%;
+        padding-left: 30px;
+    }
+    .container .cycle .content_ ul {
+        margin-left: -15%;
+    }
+    .container .cycle .content_ ul .cycle_line {
+        display: inline-block;
+        width: 68px;
+        border-bottom: 1px solid white;
+        margin-bottom: 60px;
+    }
+    .container .cycle .column-line {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -15%;
+    }
+    .container .cycle .content_1 ul {
+        width: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        margin-left: -15%;
+        padding-bottom: 20px;
+    }
+    .container .cycle .content_1 ul .cycle_line {
+        display: inline-block;
+        width: 68px;
+        border-bottom: 1px solid white;
+        margin-bottom: 60px;
+    }
+}
